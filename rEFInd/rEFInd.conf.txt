@@ -1,0 +1,26 @@
+timeout 5
+resolution 1920 1080
+scanfor manual
+default_selection Arch
+include themes/rEFInd-snow/theme.conf
+
+menuentry "Arch Linux" {
+    icon     /EFI/refind/themes/rEFInd-snow/icons/os_arch.png
+    volume   6DCF6652-002A-474A-A661-85E5241EFE7D
+    loader   vmlinuz-linux-hardened
+    initrd   initramfs-linux-hardened.img
+    options  "root=PARTUUID=8b39fd52-8f32-eb41-8791-809b8698c84c rw initrd=intel-ucode.img"
+    submenuentry "Boot using fallback initramfs" {
+        initrd initramfs-linux-hardened-fallback.img
+    }
+}
+
+menuentry "Windows 10" {
+    icon    /EFI/refind/themes/rEFInd-snow/icons/os_windows.png
+    loader  /EFI/Microsoft/Boot/bootmgfw.efi
+}
+
+menuentry "Systemd-Boot" {
+    icon    /EFI/refind/icons/os_systemd.png
+    loader  /EFI/systemd/systemd-bootx64.efi
+}
