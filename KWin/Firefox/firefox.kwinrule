@@ -1,0 +1,14 @@
+[Window settings for firefox]
+Description=Window settings for firefox
+clientmachine=localhost
+clientmachinematch=0
+size=612,358
+sizerule=2
+title=Picture-in-Picture
+titlematch=0
+types=256
+windowrole=pictureinpicture
+windowrolematch=1
+wmclass=toolkit firefox
+wmclasscomplete=true
+wmclassmatch=1
