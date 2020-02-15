@@ -1,14 +1,13 @@
-[Window settings for firefox]
-Description=Window settings for firefox
+[Application settings for firefox]
+Description=Application settings for firefox
 clientmachine=localhost
 clientmachinematch=0
-size=612,358
+noborder=true
+noborderrule=2
+position=23,53
+positionrule=2
+size=1674,906
 sizerule=2
-title=Picture-in-Picture
-titlematch=0
-types=256
-windowrole=pictureinpicture
-windowrolematch=1
-wmclass=toolkit firefox
+wmclass=navigator firefox
 wmclasscomplete=true
 wmclassmatch=1
